@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResMarble \
+    NfcResMarble \
     SettingsProviderResMarble \
     SettingsProviderResMarbleCN \
     SettingsResMarble \
