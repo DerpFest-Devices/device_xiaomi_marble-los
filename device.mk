@@ -18,7 +18,8 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-marble/device.mk)
 
 # Init scripts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc
+    $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc \
+    $(LOCAL_PATH)/rootdir/bin/init.marble.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.marble.sh
 
 # Logging
 SPAMMY_LOG_TAGS := \
@@ -44,6 +45,7 @@ endif
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResMarble \
+    MarblePBSystemUIOverlay \
     NfcResMarble \
     SettingsProviderResMarble \
     SettingsProviderResMarbleCN \

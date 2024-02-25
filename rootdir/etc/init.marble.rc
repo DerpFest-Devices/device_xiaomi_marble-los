@@ -5,6 +5,12 @@ on property:ro.boot.product.hardware.sku=marble
     enable vendor.nfc_hal_service
     enable secureelement-hal_1_2
 
+service init-marble-sh /vendor/bin/init.marble.sh
+    class main
+    user system
+    group system
+    oneshot
+
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
     class early_hal
