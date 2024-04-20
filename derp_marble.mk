@@ -7,12 +7,12 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common lineage configuration
+# Inherit from common Derfest configuration
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_marble
+PRODUCT_NAME := derp_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
@@ -33,19 +33,5 @@ BUILD_FINGERPRINT := POCO/marble_global/marble:13/TKQ1.221022.001/V14.0.7.0.TMRM
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_GAPPS_ARCH := arm64
 
-# Matrixx
-MATRIXX_BUILD_TYPE := Official
-MATRIXX_MAINTAINER := KSSRAO
-MATRIXX_CHIPSET := SM7475
-MATRIXX_BATTERY := 5000mah
-MATRIXX_DISPLAY := 1080x2400
-
-# Gapps
-WITH_GMS := true
-BUILD_GOOGLE_MESSAGE := true
-
-# Nuke AudioFX
-TARGET_EXCLUDES_AUDIOFX := true
-
-# Nuke Auxio
-TARGET_EXCLUDES_AUXIO := true
+# Official-ify
+DERP_BUILDTYPE := Official
