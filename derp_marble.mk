@@ -35,3 +35,6 @@ TARGET_GAPPS_ARCH := arm64
 
 # Official-ify
 DERP_BUILDTYPE := Official
+
+# Gapps
+TARGET_USES_PICO_GAPPS := true
