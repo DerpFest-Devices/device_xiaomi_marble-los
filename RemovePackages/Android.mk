@@ -5,15 +5,20 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
+    Accord \
+    AdaptiveVPNPrebuilt \
     Chrome \
     Chrome-Stub \
     Drive \
     Eleven \
+    Flash \
+    Glimpse \
     Maps \
     Photos \
     PrebuiltGmail \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
+    talkback \
     Videos \
     YouTube
 LOCAL_UNINSTALLABLE_MODULE := true
