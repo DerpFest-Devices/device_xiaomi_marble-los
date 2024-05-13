@@ -7,6 +7,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     Accord \
     AdaptiveVPNPrebuilt \
+    CalculatorGooglePrebuilt \
+    CalendarGooglePrebuilt \
     Chrome \
     Chrome-Stub \
     Drive \
@@ -18,7 +20,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     PrebuiltGmail \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
-    talkback \
     Videos \
     YouTube
 LOCAL_UNINSTALLABLE_MODULE := true
