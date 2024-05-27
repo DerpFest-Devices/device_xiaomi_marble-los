@@ -12,7 +12,7 @@ TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 
 PRODUCT_NAME := derp_marble
 PRODUCT_DEVICE := marble
@@ -37,6 +37,3 @@ TARGET_GAPPS_ARCH := arm64
 
 # Official-ify
 DERP_BUILDTYPE := Official
-
-# Gapps
-TARGET_USES_PICO_GAPPS := true
