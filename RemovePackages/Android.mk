@@ -14,7 +14,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     Eleven \
     Flash \
-    Glimpse \
+    FossifyGallery \
     Maps \
     Photos \
     PrebuiltGmail \
