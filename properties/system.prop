@@ -6,3 +6,12 @@ ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=80
 vendor.display.idle_time=0
 debug.sf.frame_rate_multiple_threshold=60
+
+# OIS Fix
+persist.camera.gyro.android=20
+persist.camera.HAL3.enabled=1
+persist.camera.is_type=4
+persist.camera.ois.enabled=1
+persist.camera.ois.video=1
+persist.vendor.camera.ois.enabled=1
+persist.vendor.camera.ois.video=1
